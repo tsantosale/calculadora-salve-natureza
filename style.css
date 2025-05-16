@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f1f8f5;
+    color: #2d2d2d;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* Títulos e textos */
+h1 {
+    text-align: center;
+}
+h1, h2 {    
+    color: #2f6e4f;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Open Sans','Segoe UI', sans-serif;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Seções */
+section {
+    margin-top: 1.5rem;
+}
+
+/*Simulador*/
+#simulador {
+    max-width: 500px;
+    min-height: 500px;
+    background: #2f6e4f;
+    border-radius: 8px;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem 1rem 0rem 1rem;
+}
+#simulador h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+#simulador label {
+    text-align: center;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#simulador input {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #b7e4c7;
+    border-radius: 8px;
+    width: 100px;
+    transition: border-color 0.3s;
+}
+
+#simulador input:focus {
+    outline: none;
+    border-color: #40916c;
+    box-shadow: 0 0 0 2px #d8f3dc;
+}
+
+#simulador button {
+    background-color: #ffffff;
+    color: #2f6e4f;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+#simulador button:hover {
+    background-color: #b7e4c7;
+}
+
+#resultadoSimulador {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Cenário*/
+.cenario h3 {
+    font-size: 1.2rem;
+}
+.economia {
+    display: flex;
+    flex-direction: column;
+   
+    padding: 1rem 0rem;
+}
+.destaque {
+    color: #2f6e4f;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+.destaque_text {
+    margin-top: -1.2rem;
+}
+ul {
+    list-style-position: inside;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/*Receitas*/
+.receitas {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2f6e4f;
+    border: 1px solid #2f6e4f;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+/*Rodapé*/
+footer {
+    margin-top: 3rem;
+}
+
+/*Responsividade*/
+@media (min-width: 580px) {
+
+    #simulador {
+        max-width: 800px;
+        min-height: 600px;
+    }  
+    #simulador h2, #simulador label {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1000px) {
+    #simulador h2, #simulador label {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #simulador input {
+        text-align: center;
+        width: 200px;
+        font-size: 1.2rem;
+    }
+    #simulador button {
+        font-size: 1.2rem;
+        max-width: 400px;
+    }
+
+}
