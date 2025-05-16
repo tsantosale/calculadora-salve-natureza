@@ -106,11 +106,18 @@ section {
     background-color: #b7e4c7;
 }
 
-#resultadoSimulador {
+#resultadoSimulador{ 
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     color: #ffffff;
     text-align: center;
+}
+
+#fonte {
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 1rem;
 }
 
 /*Cenário*/
